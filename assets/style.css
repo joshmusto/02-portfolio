@@ -68,45 +68,50 @@ body{
     text-align: right;
     padding-right: 10px;
     border-right: solid;
-    border-right-width: 2px;
-    border-right-color: green;
-    flex-shrink: 0;
+    border-right-width: 4px;
+    border-right-color: lightgreen;
 }
 
 .card{
-    display: flex;
+    display: inline-block;
+    width: 100%;
 }
 .card img{
     width: 15em;
     height: 15em;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 30%;
     margin-bottom: 15px;
-}
-.card p{
-    
 }
 
 #workCardMain, .workCard{
-    margin: 10px;
     padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     border: solid;
     border-color: black;
     border-radius: 10px;
-    
+    width: auto;
 }
 #workCardMain{
-    height: 200px;
-    width: 100%;
+    height: 160px;
     background-color: lightblue;
 }
 .workCard{
-    height: 100px;
-    width: 50%;
+    height: 80px;
     background-color: lightcoral;    
 }
 
-@media (max-width: 500px){
+.contact{
+    display: inline-block;
+    margin-top: 12px;
+    margin-left: auto;
+    font-size: 20px;
+    padding: 5px;
+    border:solid;
+    border-radius: 10px;
+}
+
+@media (max-width: 600px){
     .article{
         flex-direction: column;
     }
@@ -115,5 +120,11 @@ body{
        width: 240px;
        text-align: left;
        border-right: none;
+    }
+    .card img{
+        margin-left: 15%;
+    }
+    #workCardMain, .workCard{
+       margin-right: 40px;
     }
 }
